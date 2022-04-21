@@ -1,0 +1,259 @@
+:root {
+    --html-bg: #fbfafa;
+    --box-bg: #fbfafa;
+    --header-cl: #000000;
+    --p-cl: #000000;
+}
+
+.dark-mode:root {
+    --html-bg: hsl(232deg 19% 15%);
+    --header-cl: #ffffff;
+    --box-bg: hsl(228deg 29% 20%);
+    --p-cl: #6f6f6f;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+    background-color: var(--html-bg);
+}
+
+.clear{
+    clear: both;
+}
+
+.header{
+    width: 100%;
+    padding: 30px 11%;
+    background-color: var(--html-bg);
+}
+
+.header h1{
+    color: var(--header-cl);
+}
+
+.header p{
+    color: var(--header-cl);
+}
+
+.form-check{
+   position: absolute;
+   right: 11%;
+   top: 50px;
+   color: var(--header-cl);
+}
+
+.grid{
+    width: 100%;
+    padding: 0 10%;
+}
+
+.grid .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap:1.5rem;
+    padding-top: 10px;
+    
+}
+
+.grid .container .box{
+    text-align: center;
+    height: 240px;
+    background-color: var(--box-bg);
+    border-radius: 10px;
+}
+
+.cinza{
+    color: var(--p-cl);
+}
+
+.grid .container .box .linha{
+    width: 100%;
+    height: 4px;
+    background-color: #178ff5;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.grid .container .box .yo{
+    background-color: #dc414c;
+}
+
+.grid .container .box .in{
+    background: rgb(248,191,147);
+    background: -moz-linear-gradient(90deg, rgba(248,191,147,1) 0%, rgba(228,95,141,1) 73%);
+    background: -webkit-linear-gradient(90deg, rgba(248,191,147,1) 0%, rgba(228,95,141,1) 73%);
+    background: linear-gradient(90deg, rgba(248,191,147,1) 0%, rgba(228,95,141,1) 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8bf93",endColorstr="#e45f8d",GradientType=1);
+}
+
+.grid .container .box .tw{
+    background-color: #1da1f2;
+}
+
+.rede{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: var(--header-cl);
+}
+
+.rede img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.rede1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.rede1 img{
+    position: relative;
+    width: 10px;
+    height: 7px;
+    top: 9px;
+    margin-right: 8px;
+}
+
+
+h4{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--header-cl);
+}
+
+.verde{
+    color: #1eb589;
+    font-weight: 500;
+}
+
+.vermelho{
+    color: #dc414c;
+    font-weight: 500;
+}
+
+.grid1{
+    width: 100%;
+    padding: 0 11%;
+}
+
+.grid1 h2{
+    padding-top: 30px;
+    color: rgb(80, 80, 80);
+    padding-bottom: 20px;
+}
+
+.grid1 .container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap:1rem;
+    padding-top: 10px;
+
+}
+
+.grid1 .container1 .box1{
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+    background-color: var(--box-bg);
+    color: var(--header-cl);
+    border-radius: 10px;
+}
+
+.display{
+    
+    position: relative;
+    padding-bottom: 20px;
+ 
+}
+
+.display p{
+    position: relative;
+    top: 30px;
+}
+
+.display img{
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+
+.display1{
+    position: relative;
+ 
+}
+
+.display1 img{
+    position: absolute;
+    right: 22px;
+    top: 48px;
+}
+
+.display1 p{
+    position: absolute;
+    top: 40px;
+    right: -5px;
+    font-size: 13px;
+    color: #dc414c;
+}
+
+.display1 .verde{
+    color: #1eb589;
+}
+
+.display1 h6{
+    position: absolute;
+    font-size: 32px;
+    top: 30px;
+    left: 0;
+}
+
+
+
+
+@media (max-width:768px){
+    .header{
+        width: 100%;
+        padding: 30px 2%;
+        padding-bottom: 100px;
+    }
+
+    .header h1{
+        font-size: 22px;
+    }
+
+    .form-check{
+        position: absolute;
+        right: auto;
+        left: 2%;
+        top: 120px; 
+     }
+
+     .grid{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .grid1{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+}
+
+
+
